@@ -23,17 +23,17 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
     return (
         <nav>
-            <div className={`${navBarBackground} ${customFlex} fixed top-0 py-6 w-full z-30`}>
+            <div className={`${navBarBackground} ${customFlex} fixed top-0 py-4 w-full z-30`}>
                 <div className={`${customFlex} w-5/6 mx-auto`}>
                     <div className={`${customFlex} w-full gap-16 `}>
                         {/* Left Side For Logo */}
-                        <img src={Logo2} alt="Logo" className='w-32 h-12' />
+                        <img src={Logo2} alt="Logo" className='w-24 h-8 md:w-32 md:h-12' />
                         {isAboveMediumScreen ? (<div className={`${customFlex} w-full`}>
                             {/* Inner Left Nav Buttons */}
                             <div className={`${customFlex}  text-sm`}>
                                 <ul className={`${customFlex} gap-12 list-none text-sm`}>
                                     <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-                                    <Link page='About' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                                    
                                     <Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                                     <Link page='Our Classes' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                                     <Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
