@@ -20,6 +20,7 @@ export default {
       backgroundImage : (theme)=>({
         "gradient-yellow-red": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         "mobile-home" : "url('./src/assets/HomePageGraphic.png')",
+        
       }),
       fontFamily : {
         dmsans : ["DM Sans", "sans-serif"],
