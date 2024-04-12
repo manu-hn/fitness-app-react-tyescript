@@ -16,4 +16,4 @@ const BecomeMember = ({ children, setSelectedPage }: Props) => {
     )
 }
 
-export default BecomeMember
+export default BecomeMember;
