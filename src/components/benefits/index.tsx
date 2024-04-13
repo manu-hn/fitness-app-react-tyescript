@@ -137,7 +137,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                             </div>
 
                         </div>
-                        <button></button>
+                        
                     </div>
 
                 </div>

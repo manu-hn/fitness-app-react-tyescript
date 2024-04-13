@@ -8,7 +8,7 @@ import Image5 from '@/assets/image5.png';
 import Image6 from '@/assets/image6.png';
 import HeadText from '@/components/assets/header tags/HeadText';
 import { TrainingType } from '@/utils/types';
-import OurClass from './OurClass';
+import OurClass from '@/components/classes/OurClass.tsx';
 
 
 
@@ -51,7 +51,7 @@ type Props = {
 
 const OurClasses = ({ setSelectedPage }: Props) => {
     return (
-        <section className='w-full bg-primary-100 py-40' id='ourclasses'>
+        <section id='our-classes' className='w-full bg-primary-100 py-40' >
             <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}>
                 <motion.div
                     className='mx-auto w-5/6'

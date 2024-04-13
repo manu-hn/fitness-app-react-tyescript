@@ -10,10 +10,11 @@ type Props = {
 
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
-    const loweCaseID = page.toLowerCase().replace(/ /g, " ") as SelectedPage;
+    const lowerCaseID = page.toLowerCase().replace(/\s+/g, "-") as SelectedPage;
+
     return (
-        <AnchorLink className={`${selectedPage === loweCaseID ? "text-primary-500" : 'text-pink-900'} font-semibold transition duration-500 no-underline  hover:text-primary-300`}
-            href={`#${loweCaseID}`} onClick={()=>setSelectedPage(loweCaseID) }>
+        <AnchorLink className={`${selectedPage === lowerCaseID ? "text-primary-500" : 'text-pink-900'} font-semibold transition duration-500 no-underline  hover:text-primary-300`}
+            href={`#${lowerCaseID}`} onClick={() => setSelectedPage(lowerCaseID)}>
             {page}
         </AnchorLink>
 
