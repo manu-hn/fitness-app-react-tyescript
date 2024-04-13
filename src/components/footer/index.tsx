@@ -1,8 +1,8 @@
 import Logo from '@/assets/Logo2.png'
 
-type Props = {}
 
-const Footer = (props: Props) => {
+
+const Footer = () => {
     const styles = `mt-3 cursor-pointer hover:text-red-500`
 
     return (
