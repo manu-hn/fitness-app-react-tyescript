@@ -13,3 +13,11 @@ export interface BenefitsType {
   title: string;
   description: string;
 }
+
+
+export interface TrainingType {
+  name: string,
+  description: string,
+  image: string,
+
+}
