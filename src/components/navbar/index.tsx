@@ -42,9 +42,10 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
                             {/*Inner Right Member and Sign In */}
                             <div className={`${customFlex} gap-6`} >
-                                <button>
-                                    Sign In
-                                </button>
+                              
+                                <BecomeMember setSelectedPage={setSelectedPage}>
+                                Sign In
+                                </BecomeMember>
                                 <BecomeMember setSelectedPage={setSelectedPage}>
                                     Become a Member
                                 </BecomeMember>
